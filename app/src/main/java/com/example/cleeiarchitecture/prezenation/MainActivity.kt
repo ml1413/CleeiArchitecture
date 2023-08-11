@@ -28,7 +28,10 @@ class MainActivity : AppCompatActivity() {
 
         binding.btSaveData.setOnClickListener {
             val text = binding.etPutData.text.toString()
-            val param = SaveUserNameParam(firstName = text, lastName = "")
+            val param = SaveUserNameParam(
+                firstName = text,
+                lastName = ""
+            )
             val result: Boolean = saveUserNameUseCase.execute(param = param)
             binding.tvText.text = "saveResult = $result"
         }

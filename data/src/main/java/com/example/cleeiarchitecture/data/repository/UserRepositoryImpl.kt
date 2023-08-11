@@ -7,7 +7,7 @@ import com.example.cleeiarchitecture.domain.models.UserName
 import com.example.cleeiarchitecture.domain.repository.UserRepository
 
 
-class UserRepositoryImpl(private val userStorage: UserStorage) : UserRepository {
+ class UserRepositoryImpl(private val userStorage: UserStorage) : UserRepository {
 
 
     override fun saveName(saveParams: SaveUserNameParam): Boolean {
