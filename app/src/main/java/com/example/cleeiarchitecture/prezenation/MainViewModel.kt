@@ -8,8 +8,11 @@ import com.example.cleeiarchitecture.domain.models.SaveUserNameParam
 import com.example.cleeiarchitecture.domain.models.UserName
 import com.example.cleeiarchitecture.domain.use_case.GetUserNameUseCase
 import com.example.cleeiarchitecture.domain.use_case.SaveUserNameUseCase
+import dagger.hilt.android.lifecycle.HiltViewModel
+import javax.inject.Inject
 
-class MainViewModel(
+@HiltViewModel
+class MainViewModel @Inject constructor(
     private val getUserNameUseCase: GetUserNameUseCase,
     private val saveUserNameUseCase: SaveUserNameUseCase
 ) : ViewModel() {
