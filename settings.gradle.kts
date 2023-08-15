@@ -13,6 +13,7 @@ dependencyResolutionManagement {
     }
 }
 
+
 rootProject.name = "CleeiArchitecture"
 include(":app")
 include(":data")
